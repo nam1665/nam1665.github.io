@@ -111,7 +111,8 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            <img class="img-fluid" src="img/stage1.png" alt="">
+            <div class="text-center card-title">Document Reader for Banking Transaction</div>
           </div>
         </div>
 
@@ -123,7 +124,8 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+            <img class="img-fluid" src="img/topiohmni.jpg" alt="">
+            <div class="text-center card-title">Virtual Teacher</div>
           </div>
         </div>
 
@@ -135,7 +137,8 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/game.png" alt="">
+            <img class="img-fluid" src="img/object.png" alt="">
+            <div class="text-center card-title">Chatbot and Object Detection</div>
           </div>
         </div>
 
@@ -147,7 +150,8 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+            <img class="img-fluid" src="img/aiar.jpg" alt="">
+            <div class="text-center card-title">AI and AR application for Nearby Searching</div>
           </div>
         </div>
 
@@ -159,7 +163,8 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+            <img class="img-fluid" src="img/demo.png" alt="">
+            <div class="text-center card-title">Automation Mornitoring Tool for Virtual Classroom</div>
           </div>
         </div>
 
@@ -363,7 +368,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Document Reader for Banking Transaction</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -373,9 +378,45 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
+                <img class="img-fluid rounded mb-5" src="img/stage1.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    The goal of this project is create a Document Reader System that can extra information from transaction documents.
+                    But not only extra from PDF, PNG, JPG to text but also the meaning of the text extracted into categories that customer wanted.
+                    So, in this Project, we have 3 stages.
+                  </p>
+                </div>
+                <img class="img-fluid rounded mb-5" src="img/step1.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    At stage 1, we need to detect the location of text line. So we decided to use CTPN for text-detection. For better performance, we need to fine-tuned the pretrained model by our own dataset.
+                    Because we need to detect text-line so we have to generated our own dataset has same format as the original dataset.
+                  </p>
+                </div>
+                <img class="img-fluid rounded mb-5" src="img/step2.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    At stage 2, because our customer is a big Bank so their system do not allow any internet access for privacy. So we cannot use Google OCR API or other services need internet access. So we have 2 option, use opensource like Tesseract or cooperate with some partner have OCR technology.
+                    We have a friend that is the Ph.D about OCR, so we decided to use his AI Model. Moreover, his model perform better than Tesseract.
+                  </p>
+                </div>
+                <img class="img-fluid rounded mb-5" src="img/step4.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    At stage 3, because customer want to clasify the text in to their needed categories, so for the first phase, we decide to use regular expression. The downside is customer have to choose a template manually for the best classification.
+                  </p>
+                </div>
+                <img class="img-fluid rounded mb-5" src="img/step5.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    We also provide a better solution, data driven approach, but this method will need more data and time for training. So it will be depended on customer expectation.
+                  </p>
+                </div>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -402,7 +443,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Virtual Teacher</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -411,10 +452,25 @@
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
+                <img class="img-fluid rounded mb-5" src="img/topiohmni.jpg" alt="">
+                <video width="450" controls>
+                  <source src="https://namhoai.s3-ap-southeast-1.amazonaws.com/topi_demo.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    The goal of this project is to create a Virtual Teacher that can talk, interact and validate student level.
+                    I also combine with Ohmnilabs Robot so kids to engage the interaction with kids. They can tell the Robot move around and ask him open domain questions like the weather today, who is the CEO of Apple, ...
+                  </p>
+                </div>
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    In this project, for the chatbot engine, I used Dialogflow for fixed lesson material and Google Custom Search combine with Bert-Squad pretrained model for open domain question. For the Recognition and Speech Part, I used Mozilla DeepSpeech and
+                    Mozilla TTS. For the validation part, due to the lack of data, so right now, it just math
+                    statistics. I also re-train an emotional model to recognize student facial emotion for better analysis.
+                  </p>
+                </div>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -441,7 +497,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Chatbot and Object Detection</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -451,9 +507,28 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <img class="img-fluid rounded mb-5" src="img/object.png" alt="">
+                <img class="img-fluid rounded mb-5" src="img/dialogflowvox_2.png" alt="">
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    The goal is to create an end to end solution from
+                    Chatbot to Object Detection.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    The goal is to create an end to end solution from
+                    Chatbot to Object Detection.
+                    The first problem is they have over 3000 salers but only have 40 back-office
+                    employees. So, it cost tons of time for commnication because of the gap knowledge between 2 sides. We used Dialogflow as the chatbot framework and training their tech team how to develope, integrate and optimize the chatbot performance.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    The second problem is in our customer process, they need to take some pictures as the proof for safety reasons then send back these pictures to back-office. This process is
+                    completly manually.
+                  </p>
+                </div>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -480,7 +555,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">AR and AI application for nearby searching</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -489,10 +564,31 @@
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
+                <video width="350" controls>
+                  <source src="https://namhoai.s3-ap-southeast-1.amazonaws.com/IMG_8246.mov" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
+                <video width="350" controls>
+                  <source src="https://namhoai.s3-ap-southeast-1.amazonaws.com/IMG_3653.TRIM.MOV" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    This project was done in late of 2017. The time when AI and AR was a very new thing and haven't proved the efficient yet.
+                    The goal of our application is to help user can search nearby restaurant by combine with AR and AI.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    The AI part is used for recognize the sign, so users just have to capture an image, then it will give them the information and review of that restaurant.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <p class="portfolio-text">
+                    The AR part is to help user can easier to find the way to their wanted restaurnt and for new way of advertising.
+                  </p>
+                </div>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -528,10 +624,22 @@
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
+                <video width="550" controls>
+                  <source src="https://namhoai.s3-ap-southeast-1.amazonaws.com/demo_chat_monitoring.mov" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
+                <video width="550" controls>
+                  <source src="https://namhoai.s3-ap-southeast-1.amazonaws.com/VCRX_MOCA.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <div class="card-content">
+                  <p class="portfolio-text">
+                  The goal of this project is to create an automatic monitor system for Virtural Classroom Platform. The first problem here is Topica need lots of employees to track the errors happened in our system by read
+                  the text chat in the class. So I created a monitor system that using BERT for
+                  multi-label classification the student’s text chat. Combine with Flask, Redis, ReactJS and Firebase for automatic re-training, realtime monitoring and labeling data manually for making AI model better and better. The second problem is to recognize teacher’s facial. For this problem, I implemented face_recognition library that based on dlib's state-of-the-art face recognition.
+                  </p>
+                </div>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
